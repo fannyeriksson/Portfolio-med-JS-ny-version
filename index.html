@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fannys portfolio</title>
+
+	<!--Länk till CSS-->
+	<link rel="stylesheet" href="style.css">
+
+    <!--Länk till ikoner-->
+	<link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Länk till Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+
+	<!---Header--> 
+    <!---Använder boxicons för att skapa hamburgermney icon--> 
+	<header>
+	<ul class="navlist">
+			<li><a href="#hem" class="active">Hem</a></li>
+			<li><a href="#om">Om mig</a></li>
+			<li><a href="#projekt">Projekt</a></li>
+			<li><a href="#kontakt">Kontakta mig</a></li>
+		</ul>
+
+			<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---Hem-->
+    <!--- CV-CTA= Call To Action (klicka och ladda ned CV)
+    - Span för att kunna styla just den texten 
+    - Användercontainer för att det ska grupperas korrekt för en resposiv sida-->
+
+    <div class="image-container">
+	<section class="hem" id="hem">
+
+            <div class="start-text">
+                <h1>
+                    <span class="firstword"> Välkommen till min portfolio! </span><br/>Ladda ned mitt CV eller
+                    <br/> läs mer om mig här. 
+                </h1>
+                <a href="./CV.pdf" class="CV-cta"><span class="CV">Ladda ned CV</span></a>
+                
+            </div>
+        </section>
+
+	<!---Om mig-->
+     <!-- Alt-text för WCAGkrav 1.1.1, Beskriv med text allt innehåll som inte är text-->
+	<section class="om" id="om">
+		<div class="om-img">
+			<img src="profilbild.jpeg" alt="Bild på mig">
+		</div>
+
+		<div class="om-text">
+			<h2>Om mig</h2> <br>
+			<p>Jag studerar till UX-desginer med kravkompetens på Chas Academy. 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius enim, deleniti doloribus ad soluta sed nesciunt esse qui reprehenderit velit vitae perferendis necessitatibus voluptatem quo ex impedit magnam autem?
+		</div>
+	</section>
+
+	
+	<!---Projekt-->
+    <!--- # eftersom att länken inte leder någonstans, kan också vara en länk
+    -Använder boxicons för att att skapa en snygg knapp (bx bx-link-external)-->
+
+
+	<section class="projekt" id="projekt">
+		<div class="main-text">
+			<h2>Projekt</h2>
+		</div>
+
+		<div class="projekt-content">
+			<div class="row">
+                <!-- Alt-text för WCAGkrav 1.1.1, Beskriv med text allt innehåll som inte är text-->
+				<img src="https://images.unsplash.com/photo-1588058365548-9efe5acb8077?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Peron som håller i en telefon">
+				<div class="layer">
+					<h5>CarGo</h5>
+					<p>Prototyp av app </p>
+					<a href="#"><i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+                <!-- Alt-text för WCAGkrav 1.1.1, Beskriv med text allt innehåll som inte är text-->
+				<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Två personer sitter framför varsin dator och antecknar på ett papper">
+				<div class="layer">
+					<h5>Flixtrain</h5>
+					<p>Lorem ipsum dolor</p>
+					<a href="#"><i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+                <!-- Alt-text för WCAGkrav 1.1.1, Beskriv med text allt innehåll som inte är text-->
+				<img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="person som skriver på en laptop">
+				<div class="layer">
+					<h5>Okänt projekt</h5>
+					<p>Lorem ipsum dolor sit amet </p>
+					<a href="#"><i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+        </section>
+
+    <!--Kontakt-->
+    <!-- Type för att sidan ska förstå vad för slags data som kommer fyllas i (tex text)
+    - Placeholder för att visa vad som ska skrivas in av den som besöker sidan, tex namn eller email -->
+    
+    <section class="kontakt" id="kontakt">
+        <div class="kontakt-text">
+            <h2>Kontakta mig!</h2>
+            <div class="kontakt-form">
+                <form action="">
+                    <input type="name" placeholder="Ditt namn" required>
+                    <input type="email" placeholder="Din mailadress" required>
+                    <input type="" placeholder="Ditt telefonnummer" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="Ditt meddelande" required></textarea>
+                    <input type="submit" value="Skicka" class="submit" required>
+                </form>
+            </div>
+        </section>
+    
+
+
+	<!--Länk till JS--->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
